@@ -4,7 +4,7 @@ DoorOpen_ = false
 StartOpen = false
 DoorOpenComplete_ = false
 ClosePosition = y - 32
-screenShake = 3
+screenShake = 2
 
 origin_x_ = x
 origin_y_ = y
