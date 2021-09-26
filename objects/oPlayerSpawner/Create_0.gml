@@ -1,0 +1,2 @@
+spawnX = x
+spawny = y

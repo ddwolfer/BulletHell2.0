@@ -1,0 +1,1 @@
+if(!instance_exists(oPlayer)) instance_create_layer(spawnX, spawny, "Instances", oPlayer)
