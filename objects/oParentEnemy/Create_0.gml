@@ -1,5 +1,7 @@
 image_speed = 0.3
 friction = 0.5
+image_xscale = 1.5
+image_yscale = 1.5
 image_ratio = abs(image_xscale)
 enum ENEMYSTATE{
 	IDLE,
@@ -13,7 +15,7 @@ enum ENEMYSTATE{
 pathChangeCount = 0
 state = ENEMYSTATE.IDLE
 accell = 0.5
-layerID = layer_get_id("Tiles")
+layerID = layer_get_id("WallTiles")
 tiles = layer_tilemap_get_id(layerID)
 directionRange = 10
 tileSize = 16
@@ -30,9 +32,8 @@ chaseRange = 150
 chaseSpeed = 0.5
 target = oPlayer
 enemyPath = path_add()
-RoomGrid = mp_grid_create(0, 0, room_width, room_height, 8,8)
-mp_grid_add_instances(RoomGrid, oWall, true)
-mp_grid_add_instances(RoomGrid, oSign, true)
+RoomGrid = mp_grid_create(0, 0, room_width, room_height, 8, 8)
+mp_grid_add_instances(RoomGrid, oParentSolid, true)
 counter = 0
 //Attack
 HitDamage = 5

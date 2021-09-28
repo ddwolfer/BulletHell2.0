@@ -8,7 +8,7 @@ if(instance_exists(oPlayer))
 image_angle = direction
 
 //Tile collision
-layerID = layer_get_id("Tiles")
+layerID = layer_get_id("WallTiles")
 tiles = layer_tilemap_get_id(layerID)
 
 tileSize = 16

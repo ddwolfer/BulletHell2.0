@@ -110,6 +110,7 @@ for (var _y = 1; _y < height_ - 1; _y++) {
 				} 
 				
 				tilemap_set(_wall_map_id, _tile_index, _x, _y)
+				instance_create_layer(_x * CELL_WIDTH, _y * CELL_HEIGHT, "Object", oWall)
 			}
 		}
 	}

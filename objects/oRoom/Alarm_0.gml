@@ -6,6 +6,6 @@ for (var idx = 0 ; idx < Enemy_number ; idx++) {
 		(Enemy_position_x[idx] * CELL_WIDTH) + CELL_WIDTH / 2,
 		(Enemy_position_y[idx] * CELL_HEIGHT) + CELL_HEIGHT / 2,
 		layer_get_id("Instances"),
-		oSign
+		oSlimeNormal
 		)
 }

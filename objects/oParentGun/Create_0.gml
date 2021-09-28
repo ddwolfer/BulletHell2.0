@@ -1,4 +1,4 @@
-activeTimeLeft = 10
+activeTimeLeft = 9999
 pickedGun = false
 gunShootOnce = false
 activeGunDeath = true

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sGun2",
+    "path": "sprites/sGun2/sGun2.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -10,9 +10,11 @@ if(!instance_exists(target)){
 	state = ENEMYSTATE.IDLE
 	return;
 }
+
+/*
 if( tilemap_get_at_pixel(tiles,x,y)!=0 ){
 	instance_destroy(id)
-}
+}*/
 
 if( Hp / MaxHp < 1.0){
 	chaseRange = 10000
@@ -30,6 +32,7 @@ switch(state){
 		if(counter >= room_speed * 1){
 			var change = choose(0, 1)
 			switch(change){
+				// move
 				case 0: 
 					createWanderPos = true
 					while(createWanderPos){
@@ -46,6 +49,7 @@ switch(state){
 					state = ENEMYSTATE.WANDER
 					
 					break
+				// 繼續發呆
 				case 1: 
 					counter = 0
 					break
