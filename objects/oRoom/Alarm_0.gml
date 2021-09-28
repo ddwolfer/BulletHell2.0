@@ -9,3 +9,4 @@ for (var idx = 0 ; idx < Enemy_number ; idx++) {
 		oSlimeNormal
 		)
 }
+Create_finish = true

@@ -1,12 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// setting
 Room_index_		= 0
-
 Create_enemy	= false
-Enemy_Clear		= false
-Enemy_killed	= 0
+Create_finish	= false
+Enemy_lived		= 0
 Door_to_open	= instance_nearest(x, y, oDoorTop)
+
 // 房間角落位置(grid)
 grid_x1 = x / CELL_WIDTH
 grid_y1 = y / CELL_HEIGHT
