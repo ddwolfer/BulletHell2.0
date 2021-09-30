@@ -6,7 +6,6 @@ Room_index_		= 0
 Create_enemy	= false
 Create_finish	= false
 Enemy_lived		= 0
-Door_to_open	= instance_nearest(x, y, oDoorTop)
 
 // 房間角落位置(grid)
 grid_x1 = x / CELL_WIDTH
