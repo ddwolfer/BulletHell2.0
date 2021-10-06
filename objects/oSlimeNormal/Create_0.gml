@@ -4,6 +4,6 @@ event_inherited()
 
 chaseRange = 0
 
-
+DropCoinValue = irandom(500)
 
 
