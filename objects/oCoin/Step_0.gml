@@ -17,6 +17,7 @@ if (CoinCreateAnimaion) {
 
 if (CanPick) {
 	if (place_meeting(x, y, oPlayer)) {
+		oGame.PlayerCoin += CoinValue
 		show_debug_message("[oCoin Step] coin pick up")
 		instance_destroy(id)
 	}

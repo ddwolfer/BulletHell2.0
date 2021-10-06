@@ -25,7 +25,7 @@ while (monster_index < Enemy_number) {
 	if (oLevel.grid_[# _x, _y] == FLOOR) {
 		Enemy_position_x[monster_index] = _x
 		Enemy_position_y[monster_index] = _y
-		show_debug_message("[oReeom Create]Index:"+string(Room_index_)+"|x:"+string(Enemy_position_x[monster_index])+"|y:"+string(Enemy_position_y[monster_index]))
+		show_debug_message("[oRoom Create]Index:"+string(Room_index_)+"|x:"+string(Enemy_position_x[monster_index])+"|y:"+string(Enemy_position_y[monster_index]))
 		monster_index++
 	}
 }

@@ -48,7 +48,7 @@ for (var roomIndex = 0; roomIndex < room_number; roomIndex++) {
 	var _controller_x = (_self_room_x1 + _self_room_x2) / 2
 	var _controller_y = (_self_room_y1 + _self_room_y2) / 2
 	var _controller_direvtion = irandom(3)  // {→:0, ↑:1, ←:2, ↓:3}
-	var _steps = 300 // 生成多少次
+	//var _steps = 300 // 生成多少次
 	var _generate_floor = 0
 	var _generate_floor_threshold = 100
 
