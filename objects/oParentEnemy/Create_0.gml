@@ -3,6 +3,7 @@ friction = 0.5
 image_xscale = 1.5
 image_yscale = 1.5
 image_ratio = abs(image_xscale)
+
 enum ENEMYSTATE{
 	IDLE,
 	WANDER,
@@ -19,6 +20,8 @@ layerID = layer_get_id("WallTiles")
 tiles = layer_tilemap_get_id(layerID)
 directionRange = 10
 tileSize = 16
+DropCoinValue = 10
+
 //wander setting
 createWanderPos = true
 wanderRange = 32
@@ -47,3 +50,14 @@ EnemyGetHurt = false
 HurtShaderAlpha = 1.0
 sh_hurtAlpha = shader_get_uniform(shPlayerGetHurt, "hurtalpha")
 
+function CoinIndex(value) {
+	if (value < 50) {
+		return 0
+	} else if (value < 200) {
+		return 1
+	} else if (value < 500) {
+		return 2
+	} else {
+		return 3
+	}
+}

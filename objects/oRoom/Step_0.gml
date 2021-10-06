@@ -15,6 +15,7 @@ if (Create_finish) {
 	show_debug_message("[oRoom Step]Index:" + string (Room_index_) + "|enemy count:" + string(Enemy_lived))
 	// 怪物清完後開啟下一關的門 然後刪除自己
 	if (Enemy_lived <= 0) {
+		// 我會放一個們在oRoom旁邊
 		var Door_to_open = instance_nearest(x, y, oDoorTop)
 		Door_to_open.DoorOpen_ = true
 		instance_destroy(id)

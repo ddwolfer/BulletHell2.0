@@ -3,6 +3,7 @@
 DoorOpen_ = false
 StartOpen = false
 DoorOpenComplete_ = false
+PlayerClose = false
 ClosePosition = y - 32
 screenShake = 2
 
